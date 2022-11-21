@@ -1,0 +1,16 @@
+<%- include('partials/header') %>
+
+<h1>Home</h1>
+<p><%=data%></p>
+
+<% for(var i =0;i<posts.length;i++) {%>
+    <h1><%=posts[i].title%></h1>
+    <%let k = posts[i].post;%>
+    <%if(posts[i].post.length>100){%>
+        <%k=posts[i].post.slice(0,100)%>
+    <%}%>
+    <p><%=k+"..."%> &nbsp<a href="/posts/<%=rout[i]%>">Read more</a></p>
+<% } %>
+
+
+<%- include('partials/footer') %>
