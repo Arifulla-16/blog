@@ -6,7 +6,7 @@ const ejs = require("ejs");
 const _ = require('lodash');
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/blogDB",()=>{
+mongoose.connect("mongodb+srv://skarfistark:arifulla616@cluster0.6yfrdov.mongodb.net/blogDB",()=>{
   console.log("cntd");
 });
 
