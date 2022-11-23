@@ -9,7 +9,15 @@
     <%if(posts[i].post.length>100){%>
         <%k=posts[i].post.slice(0,100)%>
     <%}%>
-    <p><%=k+"..."%> &nbsp<a href="/posts/<%=rout[i]%>">Read more</a></p>
+    <p>
+        <%=k+"..."%> &nbsp
+        <a href="/posts/<%=posts[i]._id%>">Read more</a>
+
+        <form action="/" method="post">
+            <input type="hidden" class="dell" name="delp" value="<%=posts[i]._id%>">
+            <input type="submit" class="delp" value="Delete Post">
+        </form>
+    </p>
 <% } %>
 
 

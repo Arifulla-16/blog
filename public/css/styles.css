@@ -59,3 +59,11 @@ body{
     background-color: rgb(51, 102, 255);
     color: white;
 }
+
+.delp{
+    background-color: #1abc9c;
+    border-width: 0px;
+    border-radius: 10px;
+    color:#ffff;
+    display: inline;
+}
